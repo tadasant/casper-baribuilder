@@ -1,14 +1,19 @@
-# Casper
+# Casper (custom for BariBuilder)
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Casper. If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Casper/releases) page.
+# Development
 
-&nbsp;
+Node that dev directory is set up with local installation of ghost in `~/ghost-local`.
 
-![screenshot-desktop](https://user-images.githubusercontent.com/120485/27221326-1e31d326-5280-11e7-866d-82d550a7683b.jpg)
+Set up live reloading for template work:
+`cd ~/ghost-local`
+`ghost stop`
+`nodemon current/index.js --watch content/themes/casper-baribuilder --ext hbs,js,css`
 
-&nbsp;
+For assets:
+`yarn dev`
 
-# First time using a Ghost theme?
+
+# Ghost README tips
 
 Ghost uses a simple templating language called [Handlebars](http://handlebarsjs.com/) for its themes.
 
@@ -30,7 +35,7 @@ One really neat trick is that you can also create custom one-off templates just 
 - `author-ali.hbs` - Custom template for `/author/ali/` archive
 
 
-# Development
+# Building
 
 Casper styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
 
@@ -46,13 +51,6 @@ The `zip` Gulp task packages the theme files into `dist/<theme-name>.zip`, which
 ```bash
 $ yarn zip
 ```
-
-# PostCSS Features Used
-
-- Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
-- Variables - Simple pure CSS variables
-- [Color Function](https://github.com/postcss/postcss-color-function)
-
 
 # SVG Icons
 
