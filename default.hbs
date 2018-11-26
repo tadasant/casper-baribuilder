@@ -27,6 +27,9 @@
 
         {{!-- The footer at the very bottom of the screen --}}
         <footer class="site-footer outer">
+            <div class="site-footer-disclaimer">
+                <p>The information on this website is not medical advice. Please consult your medical provider before making any changes to your supplementation regimen.</p>
+            </div>
             <div class="site-footer-content inner">
                 <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
                 <nav class="site-footer-nav">
@@ -34,6 +37,8 @@
                     {{#if @blog.facebook}}<a href="{{facebook_url @blog.facebook}}" target="_blank" rel="noopener">Facebook</a>{{/if}}
                     {{#if @blog.twitter}}<a href="{{twitter_url @blog.twitter}}" target="_blank" rel="noopener">Twitter</a>{{/if}}
                     <a href="http://eepurl.com/dHMECz" target="_blank" rel="noopener">Subscribe</a>
+                    <a href="https://baribuilder.com/terms-and-conditions" target="_blank" rel="noopener">Terms & Conditions</a>
+                    <a href="https://www.iubenda.com/privacy-policy/25172832" target="_blank" rel="noopener">Privacy Policy</a>
                 </nav>
             </div>
         </footer>

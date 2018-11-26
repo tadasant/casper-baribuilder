@@ -2218,6 +2218,12 @@ Usage (In Ghost editor):
     background: #2D3239;
 }
 
+.site-footer-disclaimer {
+    color: rgba(255,255,255,0.7);
+    font-size: 1.3rem;
+    text-align: center;
+}
+
 .site-footer-content {
     display: flex;
     flex-wrap: wrap;
